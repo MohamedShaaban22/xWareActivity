@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="57144c5d4a7a4bd191d69c01d1fdab12" Name="Diagram1">
+        <EntityTypeShape EntityType="ActivityDBModel.Comment" Width="1.5" PointX="7.5" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ActivityDBModel.Event" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ActivityDBModel.Like" Width="1.5" PointX="7.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ActivityDBModel.Post" Width="1.5" PointX="5.25" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="ActivityDBModel.Team" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ActivityDBModel.User" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="ActivityDBModel.FK_Comment_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="ActivityDBModel.FK_Comment_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ActivityDBModel.FK_Event_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ActivityDBModel.FK_Like_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="ActivityDBModel.FK_Like_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ActivityDBModel.FK_Post_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ActivityDBModel.FK_User_Team1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ActivityDBModelStoreContainer" CdmEntityContainer="ActivityDBEntities">
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="ActivityDBModel.Comment">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="postid" ColumnName="postid" />
+          <ScalarProperty Name="insertiondate" ColumnName="insertiondate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="ActivityDBModel.Event">
+        <MappingFragment StoreEntitySet="Event">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="start" ColumnName="start" />
+          <ScalarProperty Name="finish" ColumnName="finish" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="insertiondate" ColumnName="insertiondate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Likes">
+      <EntityTypeMapping TypeName="ActivityDBModel.Like">
+        <MappingFragment StoreEntitySet="Like">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="postid" ColumnName="postid" />
+          <ScalarProperty Name="insertiondate" ColumnName="insertiondate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posts">
+      <EntityTypeMapping TypeName="ActivityDBModel.Post">
+        <MappingFragment StoreEntitySet="Post">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="filepath" ColumnName="filepath" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="insertiondate" ColumnName="insertiondate" />
+          <ScalarProperty Name="totallikes" ColumnName="totallikes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teams">
+      <EntityTypeMapping TypeName="ActivityDBModel.Team">
+        <MappingFragment StoreEntitySet="Team">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="insertiondate" ColumnName="insertiondate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ActivityDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="teamid" ColumnName="teamid" />
+          <ScalarProperty Name="insertiondate" ColumnName="insertiondate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
